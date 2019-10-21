@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>小目标</title>
+    <url>/2018/09/01/%E5%B0%8F%E7%9B%AE%E6%A0%87/</url>
+    <content><![CDATA[<p>毕业前刷够leetcode400题<br></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>运行官方demo flutter_gallery</title>
+    <url>/2018/03/31/1/</url>
+    <content><![CDATA[<h1 id="flutter-运行官方demo-“flutter——gallery”"><a href="#flutter-运行官方demo-“flutter——gallery”" class="headerlink" title="flutter 运行官方demo “flutter——gallery”"></a><center>flutter 运行官方demo “flutter——gallery”</center></h1><p>&emsp;&emsp;最近开始学习flutter,在导入官方demo“flutter——gallery”时，先是package&ensp;get一直失败</p><figure class="highlight plain"><figcaption><span>flutter packages get</span></figcaption><table><tr><td class="code"><pre><span class="line">Running &quot;flutter packages get&quot; in flutter_gallery...</span><br><span class="line">Git error. Command: git fetch</span><br><span class="line">fatal: Not a git repository (or any of the parent directories): .git</span><br><span class="line">pub get failed (69) -- attempting retry 1 in 1 second...</span><br><span class="line">Git error. Command: git fetch</span><br><span class="line">fatal: Not a git repository (or any of the parent directories): .git</span><br><span class="line">pub get failed (69) -- attempting retry 2 in 2 seconds...</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+<p>将pubspec.ymal中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">flutter_gallery_assets:</span><br><span class="line">    git:</span><br><span class="line">      url: https://flutter.googlesource.com/gallery-assets//修改为https://gitee.com/creatint/gallery-assets.git</span><br><span class="line">      ref: d318485f208376e06d7e330d9f191141d14722b8</span><br></pre></td></tr></table></figure>
+<p>修改了pubspec.ymal后package&ensp;get成功，但运行时又报了一大堆不认识的错误，心态爆炸。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* Error running Gradle:</span><br><span class="line">Exit code 1 from: C:\Android\flutter\examples\flutter_gallery\android\gradlew.bat app:properties:</span><br><span class="line">Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">FAILURE: Build failed with an exception.</span><br><span class="line"></span><br><span class="line">* Where:</span><br><span class="line">Script &apos;C:\Android\flutter\packages\flutter_tools\gradle\flutter.gradle&apos; line: 194</span><br><span class="line"></span><br><span class="line">* What went wrong:</span><br><span class="line">A problem occurred configuring project &apos;:connectivity&apos;.</span><br><span class="line">&gt; Could not find method debugProvided() for arguments [file collection] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.</span><br><span class="line"></span><br><span class="line">* Try:</span><br><span class="line">Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.</span><br><span class="line"></span><br><span class="line">* Get more help at https://help.gradle.org</span><br><span class="line"></span><br><span class="line">BUILD FAILED in 13s</span><br><span class="line"></span><br><span class="line">Please review your Gradle project setup in the android/ folder.</span><br></pre></td></tr></table></figure>
+<p>因为我能力有限，无法解决，最后建了个新项目，把demo的lib目录和修改好的pubspec.ymal复制过去，成功运行。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>flutter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇日志</title>
+    <url>/2018/03/04/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p> 我的第一篇日志。</p>
+]]></content>
+  </entry>
+</search>
